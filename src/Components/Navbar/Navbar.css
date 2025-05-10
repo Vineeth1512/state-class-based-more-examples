@@ -1,0 +1,83 @@
+header {
+  background: linear-gradient(135deg, #3a81d2, #bc3e94);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+nav {
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links li {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1.5rem;
+}
+
+.nav-links li:hover {
+  color: #ff6347;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.theme-toggle-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+  color: #333;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

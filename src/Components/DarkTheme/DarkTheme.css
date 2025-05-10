@@ -1,0 +1,37 @@
+.theme-container {
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  height: 100vh;
+}
+
+.theme-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+.theme-container button {
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #333;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-container.light {
+  background-color: #ffffff;
+  color: black;
+}
+
+.theme-container.dark {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.theme-container button:hover {
+  background-color: #333;
+  color: white;
+}
