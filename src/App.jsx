@@ -6,6 +6,7 @@ import RandomQuote from "./Components/RandomQuote/RandomQuote";
 import Home from "./Components/Home/Home";
 import { Route, Routes } from "react-router-dom";
 import DarkTheme from "./Components/DarkTheme/DarkTheme";
+import LoginSignup from "./Components/LoginSignup/LoginSignup";
 class App extends React.Component {
   render() {
     return (
@@ -17,6 +18,7 @@ class App extends React.Component {
           <Route path="/random-color" element={<RandomColor />} />
           <Route path="/random-quote" element={<RandomQuote />} />
           <Route path="/theme-change" element={<DarkTheme />} />
+          <Route path="/login-signup" element={<LoginSignup />} />
         </Routes>
       </>
     );

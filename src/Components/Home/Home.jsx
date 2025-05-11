@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 export default class Home extends Component {
-
-
-
-  
   render() {
     return (
       <div class="card-row">
@@ -30,6 +26,12 @@ export default class Home extends Component {
         <Link to={"/theme-change"}>
           <div class="card">
             <h3>DarkTheme</h3>
+            <p>Click to view the Random Quote Generator</p>
+          </div>
+        </Link>
+        <Link to={"/login-signup"}>
+          <div class="card">
+            <h3>Login/Signup</h3>
             <p>Click to view the Random Quote Generator</p>
           </div>
         </Link>
